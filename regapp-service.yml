@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: valaxy-service
+  name: tm-service
   labels:
-    app: regapp 
+    app: tm 
 spec:
   selector:
-    app: regapp 
+    app: tm
 
   ports:
     - port: 8080
