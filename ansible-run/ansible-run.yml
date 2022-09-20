@@ -1,0 +1,10 @@
+---
+ - name: Playbook to run manifest files on kubernetes cluster
+   hosts: kube-server
+   user: root
+   tasks:
+    - name: Run deploy file on kuberenetes
+      command: kubectl apply -f /root/app-deploy.yml
+    - name: Run services on kubernetes
+      command: kubectl apply -f /root/app-service.yml
+      
